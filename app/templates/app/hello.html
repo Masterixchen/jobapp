@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+{% if is_authenticated %}
+    <h1>Hello {{ name }}</h1>
+{% else %}
+    <h1>Hello User</h1>
+{% endif %}
+<h2>{{ first_list.0 }}</h2>
+<h2>{{ temp_class.x }}</h2>
+<h2>Age: {{  age }}</h2>
+
+{% for x in first_list %}
+    <p>{{ x }}</p>
+{% endfor %}
+
+</body>
+</html>

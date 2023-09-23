@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Detail</title>
+</head>
+<body>
+
+<a href={% url "jobs_home" %}>
+    <h1>
+        Home
+    </h1>
+</a>
+
+<h1>{{ job.title }}</h1>
+<h3>{{ job.description }}</h3>
+<h3>Salary: {{ job.salary }}</h3>
+</body>
+</html>
